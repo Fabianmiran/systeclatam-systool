@@ -3,6 +3,8 @@
 
 Write-STLog "SYSTEC SysTool V0.1 starting."
 
+Set-STConsoleEncoding
+
 # -----------------------------------------
 # VALIDATE ENVIRONMENT
 # -----------------------------------------

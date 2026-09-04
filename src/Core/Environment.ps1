@@ -1,6 +1,19 @@
 # SYSTEC SysTool
 # Core/Environment.ps1
 
+function Set-STConsoleEncoding {
+
+    try {
+        [Console]::OutputEncoding = [System.Text.UTF8Encoding]::new($false)
+        [Console]::InputEncoding = [System.Text.UTF8Encoding]::new($false)
+
+        Write-STLog "Console encoding configured to UTF-8."
+    }
+    catch {
+        Write-STLog "Could not configure console encoding: $($_.Exception.Message)" "WARN"
+    }
+}
+
 function Get-STEnvironment {
 
     $environment = [ordered]@{
