@@ -1,0 +1,25 @@
+# Logs
+logs/
+*.log
+
+# Temporales
+tmp/
+temp/
+*.tmp
+
+# Build
+dist/
+out/
+release/
+
+# PowerShell
+*.psd1.bak
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
