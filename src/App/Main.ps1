@@ -27,6 +27,12 @@ $environment = Get-STEnvironment
 $system = Get-STSystemInfo
 
 # -----------------------------------------
+# NETWORK DIAGNOSTICS
+# -----------------------------------------
+
+$network = Get-STNetworkDiagnostics
+
+# -----------------------------------------
 # CONSOLE OUTPUT
 # -----------------------------------------
 

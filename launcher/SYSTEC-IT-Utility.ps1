@@ -39,5 +39,16 @@ if (-not (Test-Path $MainPath)) {
 
     exit 1
 }
+$NetworkModulePath = Join-Path $PSScriptRoot "..\src\Modules\Network\NetworkDiagnostics.ps1"
+
+if (-not (Test-Path $NetworkModulePath)) {
+
+    Write-Host "ERROR: NetworkDiagnostics.ps1 not found." -ForegroundColor Red
+
+    exit 1
+}
+
+. $NetworkModulePath
 
 . $MainPath
+
